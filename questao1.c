@@ -3,7 +3,9 @@
 
 void somarConjunto(int conjunto[],int conjuntoTamanho){
 	
-	for(int i=0;i<conjuntoTamanho;i++){
+	int i;
+	
+	for(i=0;i<conjuntoTamanho;i++){
 		printf("%d",conjunto[i]);
 		if(i < conjuntoTamanho-1){
 			printf(" ");
@@ -13,7 +15,7 @@ void somarConjunto(int conjunto[],int conjuntoTamanho){
 	
 	int subConjuntoTamanho = conjuntoTamanho-1;
 	int subConjunto[subConjuntoTamanho];
-	for(int i=0;i<subConjuntoTamanho;i++){
+	for(i=0;i<subConjuntoTamanho;i++){
 		subConjunto[i] = conjunto[i]+conjunto[i+1];
 	}
 	
@@ -24,9 +26,10 @@ void somarConjunto(int conjunto[],int conjuntoTamanho){
 
 int main(){
 	
+	int i;
 	int conjunto[10] = {0,0,0,0,0,0,0,0,0,0};
 	
-	for(int i=0;i<10;i++){
+	for(i=0;i<10;i++){
 		scanf("%d",&conjunto[i]);
 	}
 
